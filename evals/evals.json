@@ -3,20 +3,20 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "把今天最值得写的一条 AI 新闻做成适合微信公众号发布的中文文章，风格要犀利一点，但别像低级标题党。最后给我一个可发草稿箱的标题和 HTML 结构建议。",
-      "expected_output": "Should choose a worthwhile angle, produce a strong Chinese title, and generate publishable公众号-style article guidance with HTML-ready structure.",
+      "prompt": "围绕‘一家本地餐饮品牌准备开第二家店’这个主题，写一篇适合微信公众号发布的中文文章。不要写成招商软文，要更像老板写给老顾客看的真心话。最后给我一个可发草稿箱的标题和 HTML 结构建议。",
+      "expected_output": "Should follow the user-chosen business topic, keep a公众号-friendly tone, produce a strong Chinese title, and generate HTML-ready article guidance.",
       "files": []
     },
     {
       "id": 2,
-      "prompt": "我给你 3 个 AI 新闻链接，你别逐条翻译，帮我揉成一篇公众号短稿。要求开头两句就把人钩住，一句话一段，结尾告诉读者现在该怎么用这波变化。",
-      "expected_output": "Should synthesize multiple sources into one article instead of doing link-by-link summaries, keep short paragraphs, and end with practical action advice.",
+      "prompt": "我给你 3 个链接，主题是亲子教育，不要逐条翻译，帮我揉成一篇公众号短稿。要求开头两句就把家长钩住，一句话一段，结尾告诉读者现在最值得做的一个动作。",
+      "expected_output": "Should synthesize multiple sources into one article instead of doing link-by-link summaries, stay on the parenting topic, keep short paragraphs, and end with practical action advice.",
       "files": []
     },
     {
       "id": 3,
-      "prompt": "根据一条新发布的大模型消息，写一篇适合公众号的中文评论稿，重点不是复述参数，而是告诉普通读者这事到底意味着什么。如果适合发草稿箱，也请给出后续发布步骤。",
-      "expected_output": "Should prioritize meaning over specs, explain impact for normal readers, and mention draft-creation workflow when appropriate.",
+      "prompt": "根据一场新品发布会的素材，写一篇适合公众号的中文评论稿，重点不是复述参数，而是告诉普通消费者这东西到底值不值得关注。如果适合发草稿箱，也请给出后续发布步骤。",
+      "expected_output": "Should prioritize meaning over raw specs, explain impact for normal readers, stay aligned with the user-selected product topic, and mention draft-creation workflow when appropriate.",
       "files": []
     }
   ]

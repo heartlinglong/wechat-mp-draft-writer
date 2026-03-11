@@ -6,15 +6,18 @@ OpenClaw skill for researching, writing, formatting, and publishing WeChat Offic
 
 This skill helps an agent:
 
-- find and compare higher-quality AI/news sources
+- turn a user-chosen topic into a publishable公众号 article
+- gather and compare higher-quality source material relevant to that topic
 - choose a more publishable angle instead of blindly summarizing
 - write Chinese公众号文章 in a sharper, more readable style
 - format the article as HTML
 - create a WeChat Official Account draft through a local publishing script
 
+Important: this skill is **not limited to AI/news topics**. The topic direction should come from the user.
+
 ## Writing style
 
-The skill is tuned for:
+The default style is tuned for:
 
 - Chinese output
 - humorous talk-show energy
@@ -23,11 +26,15 @@ The skill is tuned for:
 - short paragraphs, often one sentence per paragraph
 - practical ending with action suggestions
 
+If the user wants a different tone, follow the user.
+
 ## Repository structure
 
 ```text
 wechat-mp-draft-writer/
 ├── SKILL.md
+├── evals/
+│   └── evals.json
 ├── references/
 │   └── workflow.md
 └── scripts/
@@ -52,7 +59,3 @@ python3 /root/.openclaw/workspace/scripts/wechat_mp_draft.py "标题" /path/to/c
 ## Package
 
 A packaged `.skill` artifact can be generated with the Anthropic/OpenClaw skill packaging tools.
-
-## License
-
-MIT if you want it open; otherwise update this repository with your preferred license.
